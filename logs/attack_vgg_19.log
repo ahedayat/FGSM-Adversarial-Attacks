@@ -1,0 +1,56 @@
+/content/drive/MyDrive/ADL-P04-02
+Files already downloaded and verified
+Files already downloaded and verified
+**** Loading Model...
+**** Model is loaded successfully ****
+Evaluation Classifier: 100% 156/156 [00:03<00:00, 43.93it/s, acc1=81.130, acc2=91.236, loss=0.594]
++-------------------------+
+train + Epsilon = 0.0
++-------------------------+
+Iterative FGSM ( epsilone = 0.00000e+00 ): 100% 50000/50000 [05:29<00:00, 151.68it/s, acc=0.902]
+Accuracy: 0.902
++-------------------------+
+test + Epsilon = 0.0
++-------------------------+
+Iterative FGSM ( epsilone = 0.00000e+00 ): 100% 10000/10000 [01:03<00:00, 156.49it/s, acc=0.811]
+Accuracy: 0.811
++-------------------------+
+train + Epsilon = 0.05
++-------------------------+
+Iterative FGSM ( epsilone = 5.00000e-02 ): 100% 50000/50000 [15:55<00:00, 52.31it/s, acc=0.238]
+Accuracy: 0.238
++-------------------------+
+test + Epsilon = 0.05
++-------------------------+
+Iterative FGSM ( epsilone = 5.00000e-02 ): 100% 10000/10000 [02:59<00:00, 55.74it/s, acc=0.217]
+Accuracy: 0.217
++-------------------------+
+train + Epsilon = 0.1
++-------------------------+
+Iterative FGSM ( epsilone = 1.00000e-01 ): 100% 50000/50000 [15:49<00:00, 52.66it/s, acc=0.175]
+Accuracy: 0.175
++-------------------------+
+test + Epsilon = 0.1
++-------------------------+
+Iterative FGSM ( epsilone = 1.00000e-01 ): 100% 10000/10000 [03:00<00:00, 55.51it/s, acc=0.160]
+Accuracy: 0.160
++-------------------------+
+train + Epsilon = 0.15000000000000002
++-------------------------+
+Iterative FGSM ( epsilone = 1.50000e-01 ): 100% 50000/50000 [15:51<00:00, 52.57it/s, acc=0.147]
+Accuracy: 0.147
++-------------------------+
+test + Epsilon = 0.15000000000000002
++-------------------------+
+Iterative FGSM ( epsilone = 1.50000e-01 ): 100% 10000/10000 [02:59<00:00, 55.71it/s, acc=0.134]
+Accuracy: 0.134
++-------------------------+
+train + Epsilon = 0.2
++-------------------------+
+Iterative FGSM ( epsilone = 2.00000e-01 ): 100% 50000/50000 [15:50<00:00, 52.63it/s, acc=0.133]
+Accuracy: 0.133
++-------------------------+
+test + Epsilon = 0.2
++-------------------------+
+Iterative FGSM ( epsilone = 2.00000e-01 ): 100% 10000/10000 [02:59<00:00, 55.73it/s, acc=0.119]
+Accuracy: 0.119
