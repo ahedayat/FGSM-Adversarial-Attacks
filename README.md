@@ -217,7 +217,7 @@ FGSM method is a white-box method,this means it must have the network. This meth
 $$ X' = X + \epsilon \ sign( \nabla_X J(\theta, X, Y) ) $$
 
 # FGSM Results
-The value of $ \epsilon $ in FGSM method is set to 0.05 .
+The value of $\epsilon$ in FGSM method is set to 0.05 .
 
 <table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
 	<thead>
