@@ -288,3 +288,60 @@ The value of $\epsilon$ in FGSM method is set to 0.05 .
     </tbody>
 </table>
 
+# Defense to Adversarial Attack
+
+To defend to adversarial attack, different methods have been provided, two of them are as follows:
+
+<ul>
+    <li>
+        <strong> Training with Adversarial Data </strong>
+        <ul>
+            <li>
+                In this method, methods such as FGSM are used as a Data Augmentation method and the network is trained with augmented data from adversarial methods. This makes the network somewhat resistant to adversarial attack.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong> Distillation as a Defense to Adversarial Attack </strong>
+        <ul>
+            <li>
+                In this method, first a deep network is trained and then by distilling the knowledge, the knowledge learned by this model is transferred to a shallower model.
+            </li>
+        </ul>
+    </li>
+</ul>
+
+# Distillation as a Defense to Adversarial Attack
+
+As mentioned above, distilling the knowledge learned by the model into a smaller model is one way to deal with adversarial attacks. By using knowledge distillation, we transfer the knowledge learned by VGG-19 to VGG-11 network.
+
+As can be seen in the figure below, this method has somewhat increased the resistance of the model against adversarial attacks. Since the VGG-11 model is still considered as a deep model, this increase in resistance is not so great. 
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <thead>
+    </thead>
+    <tbody style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+        <tr>
+            <td>
+                <img src="./plots/fgsm/train_vgg11_vgg19.png" alt="The accuracy of VGG-19 and VGG-11 models trained on training data" style="width: 50rem"/>
+            </td>
+            <td>
+                <img src="./plots/fgsm/test_vgg11_vgg19.png" alt="The accuracy of VGG-19 and VGG-11 models trained on test data" style="width: 50rem"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                a
+            </td>
+            <td>
+                b
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                The accuracy of VGG-19 and VGG-11 models trained for different values of 𝜖 on a) training and b) test data
+            </td>
+        </tr>
+    </tbody>
+</table>
+
