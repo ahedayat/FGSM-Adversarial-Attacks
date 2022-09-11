@@ -345,3 +345,86 @@ As can be seen in the figure below, this method has somewhat increased the resis
     </tbody>
 </table>
 
+# Visualization
+
+The purpose of visualization is to understand the behavior of the network. For this purpose, we use the following two methods to visualizate the network:
+
+<ul>
+    <li>
+        Integrated Gradient
+    </li>
+    <li>
+        Gradient Shap
+    </li>
+</ul>
+
+As can be seen in the visualizations, the network pays attention to the whole image, which was also noticeable before these visualizations; Because the size of the image is not much bigger than the convolution layer filters and the network can easily pay attention to the whole image.
+
+<table style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+    <thead>
+        <tr>
+            <td></td>
+            <td>
+                VGG-19
+            </td>
+            <td>
+                VGG-11
+            </td>
+        </tr>
+    </thead>
+    <tbody style="text-align: center margin-left: auto; margin-right: auto; text-align: center" border=0 align=center>
+        <tr>
+            <td>
+                Original Image
+            </td>
+            <td>
+                <img src="./visualization/original_vgg19_none.png" alt="input image to VGG-19" style="width: 50rem"/>
+            </td>
+            <td>
+                <img src="./visualization/original_vgg11_vgg19.png" alt="input image to VGG-11" style="width: 50rem"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Integrated Gradients
+            </td>
+            <td>
+                <img src="./visualization/integrated_gradients_vgg19_none.png" alt="integrated gradients visualization of input image to VGG-19" style="width: 50rem"/>
+            </td>
+            <td>
+                <img src="./visualization/integrated_gradients_vgg11_vgg19.png" alt="integrated gradients visualization of input image to VGG-11" style="width: 50rem"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gradient Shap
+            </td>
+            <td>
+                <img src="./visualization/gradient_shap_vgg19_none.png" alt="gradient shap visualization of input image to VGG-19" style="width: 50rem"/>
+            </td>
+            <td>
+                <img src="./visualization/gradient_shap_vgg11_vgg19.png" alt="gradient shap visualization of input image to VGG-11" style="width: 50rem"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=3>
+                Examining different visualization of the network
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+# References
+
+<ul>
+    <li>
+        <a href="https://arxiv.org/abs/1412.6572"> 
+            Ian J. Goodfellow, Jonathon Shlens, and Christian Szegedy, “<strong>Explaining and Harnessing Adversarial Examples</strong>”, arXiv: 1412.6572v3 [stat.ML], Mar. 2015.
+        </a>
+    </li>
+    <li>
+        <a href="https://arxiv.org/abs/1511.04508">
+            Nicolas Papernot, Patrick McDaniel, Xi Wu, Somesh Jha, and Ananthram Swami, “<strong>Distillation as a Defense to Adversarial Perturbations against Deep Neural Networks</strong>”, arXiv:1511.04508v2 [cs.CR], Mar. 2016.
+        </a>
+    </li>
+</ul>
